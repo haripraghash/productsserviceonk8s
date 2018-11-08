@@ -1,0 +1,13 @@
+﻿kind: Service
+apiVersion: v1
+metadata:
+  name: productsstoresonk8s-service
+spec:
+  selector:
+    app: productsstoresonk8s
+    tier: frontend
+  type: NodePort
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30800
