@@ -16,7 +16,7 @@ spec:
     tier: frontend
   spec: 
    containers:
-   - image: haripraghash/productstoresonk8s:v4.#{}#
+   - image: haripraghash/productstoresonk8s:v4.#{Build.BuildId}#
      name: frontend-containers
      ports:
      - containerPort: 80
